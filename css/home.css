@@ -7,10 +7,6 @@
     scroll-behavior: smooth;
    
 }
-body{
-  
-}
-
 html{
    background-color: rgb(192, 216, 253);
 }
@@ -48,13 +44,13 @@ html{
 #principal-text{
     display: inline-block;
     text-align: left;
-    width: 49%;
+    width: 65%;
     margin:100px auto ;
 }
 
 #img-principal{
     display: inline-block;
-    width: 49%;
+    width: 33%;
     text-align: right;
 }
 
@@ -99,26 +95,28 @@ svg:hover{
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-/* ---- Nome animado --- */
-
-
 #estatico{
     font-size: 50px;
     font-weight:800 ;
     display: inline-flex;
 }
 
+/* ---- Nome animado --- 
+#animacao{
+    display: inline-flex;
+}
+
+
+
 #li-slider{
-    margin-left: 330px;
-    margin-top: -70px;
+    margin-top: -10px;
+    margin-left: 15px;
     font-weight: bold;
     font-size: 40px;
     list-style: none;
     line-height: 90px;
     height: 70px;
     overflow: hidden;
-   
 }
 #li-slider span{
     position: relative;
@@ -128,7 +126,8 @@ svg:hover{
     content: "";
     position: absolute;
     width: 100%;
-    height: 70px;   
+    height: 60px;
+    border-left: rgb(3, 15, 122) solid 1px;  
     left: 0;
     animation: letras  2.5s steps(100) infinite;
     background: rgb(192, 216, 253);
@@ -138,110 +137,22 @@ svg:hover{
     
     animation: slide 10s steps(4) infinite;
     position: relative;
-    left: 0px;
     top: 0;
+    left: 0;
+    
 }
-
 @keyframes slide{
     100%{
         top: -360px;
     }
 }
-
 @keyframes letras{
-    80%{
+    90%{
         left: 100%;
-        margin: 0 -35px 0 35px;
+        margin: 0 -10px 0 10px;
     }
 }
+*/
 
 
-/* --- Sobre -----*/
-#sobre{
-    background-color:rgb(90, 100, 116);
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    align-items: center;
-}
 
-.sobre-detalhes{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.sobre-detalhes .left{
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.sobre-detalhes .right{
-    width: 55%;
-    
-}
-.left img{
-    width: 400px;
-    
-}
-.sobre-content {
-    width: 80%;
-    height: 100vh;
-    margin: 80px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-#titulo-sobre{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
-    margin-top: 150px;
-}
-.right{
-    height: 80vh;
-    color: black;
-}
-.topico{
-    margin: 50px 0 50px 0;
-}
-
-/* --- Grade de projetos ----*/
-
-#projeto{
-    background-color:rgb(192, 216, 253);
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-}
-#projeto-div{
-    width: 90%;
-    height: 100vh;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    
-}
-.grade-projeto{
-    width: 250px;
-    height: 200px;
-    background-color: rgb(192, 216, 253);
-    margin: 10px;
-}
-#h2-projeto{
-    margin: 80px 0px 50px 0px;
-
-}
-.grade-1{
-    display: flex;
-    justify-content: space-around;
-    
-}
-.grade-projeto{
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px 1px rgb(97, 8, 97);
-}
